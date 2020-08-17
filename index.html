@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAGyWcdY47E8GFhLWpNVnMdC8ZARJKUIo8",
+          authDomain: "todo-database-app-3.firebaseapp.com",
+          databaseURL: "https://todo-database-app-3.firebaseio.com",
+          projectId: "todo-database-app-3",
+          storageBucket: "todo-database-app-3.appspot.com",
+          messagingSenderId: "289069926931",
+          appId: "1:289069926931:web:8895fb82b72019f71dcde6",
+          measurementId: "G-BP0R3WFGMP"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+</head>
+ <body>
+   
+    <div class="container1">
+         
+        <h2> <i class="fa fa-list-alt" aria-hidden="true"></i>
+            <i> Add Todo Here: </i> <input type="text"  placeholder="title..."  id="addtext" class="inputtxt"> 
+        <button type="button" class="btn btn-primary" onclick="func1()" > <i class="fa fa-plus-square" aria-hidden="true"></i>
+            Add Item</button>
+        <button type="button" class="btn btn-warning" onclick="delall()"><i class="fa fa-trash" aria-hidden="true"></i>
+            Delete All</button></h2>
+
+    </div>
+
+
+    <div> 
+        <h1 class="list1"> <u><b><i class="fa fa-list-ul" aria-hidden="true"></i>
+            MY TO-DO LIST</b></u> </h1>
+    </div>
+
+    <div class="font">
+        <h1> 
+        <ul id="list" class="list2">
+            
+        </ul>
+    </h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
